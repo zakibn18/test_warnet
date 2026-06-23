@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -348,6 +348,34 @@ namespace Sistem_Warnet
                 localConn.Open();
                 cmd.ExecuteNonQuery();
             }
+        }
+
+        public DataTable GetRekapTransaksi(DateTime tanggalMulai, DateTime tanggalSelesai)
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection localConn = new SqlConnection(connectionString))
+            {
+                string query = @"
+                    SELECT 
+                        t.tgl_transaksi AS [Tanggal Transaksi],
+                        tr.nama_tier AS [Tier PC],
+                        t.durasi_jam AS [Durasi Jam],
+                        t.total_bayar AS [Total Bayar],
+                        u.username AS [Operator]
+                    FROM Transaksi_Pembelian t
+                    INNER JOIN Tier_PC tr ON t.id_tier = tr.id_tier
+                    INNER JOIN Pengguna_Staf u ON t.id_user = u.id_user
+                    WHERE t.tgl_transaksi >= @tglMulai AND t.tgl_transaksi <= @tglSelesai
+                    ORDER BY t.tgl_transaksi DESC";
+
+                SqlCommand cmd = new SqlCommand(query, localConn);
+                cmd.Parameters.AddWithValue("@tglMulai", tanggalMulai.Date);
+                cmd.Parameters.AddWithValue("@tglSelesai", tanggalSelesai.Date.AddDays(1).AddSeconds(-1));
+                
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+            return dt;
         }
     }
 }

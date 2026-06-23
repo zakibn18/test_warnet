@@ -100,6 +100,12 @@
       <DependentUpon>DBWarnetDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="DSWarnet.cs" />
+    <Compile Include="FormRekapPenghasilan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRekapPenghasilan.Designer.cs">
+      <DependentUpon>FormRekapPenghasilan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormStrukKasir.cs">
       <SubType>Form</SubType>
     </Compile>

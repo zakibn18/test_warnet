@@ -1,4 +1,4 @@
-﻿namespace Sistem_Warnet
+namespace Sistem_Warnet
 {
     partial class Dashboard_Form
     {
@@ -78,13 +78,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTotalPendapatan);
             this.Controls.Add(this.chartPendapatan);
+            this.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Dashboard_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartPendapatan)).EndInit();

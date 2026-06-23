@@ -279,5 +279,11 @@ namespace Sistem_Warnet
                 }
             }
         }
+
+        private void btnRekapPenghasilan_Click(object sender, EventArgs e)
+        {
+            FormRekapPenghasilan rekapForm = new FormRekapPenghasilan();
+            rekapForm.ShowDialog();
+        }
     }
 }

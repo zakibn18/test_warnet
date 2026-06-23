@@ -37,43 +37,54 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DBWarnetDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DBWarnetDataSet" msprop:Generator_DataSetName="DBWarnetDataSet">
+  <xs:element name="DBWarnetDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DBWarnetDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DBWarnetDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="sp_CetakStruk" msprop:Generator_RowEvHandlerName="sp_CetakStrukRowChangeEventHandler" msprop:Generator_RowDeletedName="sp_CetakStrukRowDeleted" msprop:Generator_RowDeletingName="sp_CetakStrukRowDeleting" msprop:Generator_RowEvArgName="sp_CetakStrukRowChangeEvent" msprop:Generator_TablePropName="sp_CetakStruk" msprop:Generator_RowChangedName="sp_CetakStrukRowChanged" msprop:Generator_RowChangingName="sp_CetakStrukRowChanging" msprop:Generator_TableClassName="sp_CetakStrukDataTable" msprop:Generator_RowClassName="sp_CetakStrukRow" msprop:Generator_TableVarName="tablesp_CetakStruk" msprop:Generator_UserTableName="sp_CetakStruk">
+        <xs:element name="sp_CetakStruk" msprop:Generator_RowClassName="sp_CetakStrukRow" msprop:Generator_RowEvHandlerName="sp_CetakStrukRowChangeEventHandler" msprop:Generator_RowDeletedName="sp_CetakStrukRowDeleted" msprop:Generator_RowDeletingName="sp_CetakStrukRowDeleting" msprop:Generator_RowEvArgName="sp_CetakStrukRowChangeEvent" msprop:Generator_TablePropName="sp_CetakStruk" msprop:Generator_RowChangedName="sp_CetakStrukRowChanged" msprop:Generator_UserTableName="sp_CetakStruk" msprop:Generator_RowChangingName="sp_CetakStrukRowChanging" msprop:Generator_TableClassName="sp_CetakStrukDataTable" msprop:Generator_TableVarName="tablesp_CetakStruk">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="tgl_transaksi" msprop:Generator_ColumnPropNameInRow="tgl_transaksi" msprop:Generator_ColumnPropNameInTable="tgl_transaksiColumn" msprop:Generator_ColumnVarNameInTable="columntgl_transaksi" msprop:Generator_UserColumnName="tgl_transaksi" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="durasi_jam" msprop:Generator_ColumnPropNameInRow="durasi_jam" msprop:Generator_ColumnPropNameInTable="durasi_jamColumn" msprop:Generator_ColumnVarNameInTable="columndurasi_jam" msprop:Generator_UserColumnName="durasi_jam" type="xs:int" />
-              <xs:element name="total_bayar" msprop:Generator_ColumnPropNameInRow="total_bayar" msprop:Generator_ColumnPropNameInTable="total_bayarColumn" msprop:Generator_ColumnVarNameInTable="columntotal_bayar" msprop:Generator_UserColumnName="total_bayar" type="xs:int" />
-              <xs:element name="kode_voucher" msprop:Generator_ColumnPropNameInRow="kode_voucher" msprop:Generator_ColumnPropNameInTable="kode_voucherColumn" msprop:Generator_ColumnVarNameInTable="columnkode_voucher" msprop:Generator_UserColumnName="kode_voucher">
+              <xs:element name="tgl_transaksi" msprop:Generator_UserColumnName="tgl_transaksi" msprop:Generator_ColumnPropNameInTable="tgl_transaksiColumn" msprop:Generator_ColumnPropNameInRow="tgl_transaksi" msprop:Generator_ColumnVarNameInTable="columntgl_transaksi" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="durasi_jam" msprop:Generator_UserColumnName="durasi_jam" msprop:Generator_ColumnPropNameInTable="durasi_jamColumn" msprop:Generator_ColumnPropNameInRow="durasi_jam" msprop:Generator_ColumnVarNameInTable="columndurasi_jam" type="xs:int" />
+              <xs:element name="total_bayar" msprop:Generator_UserColumnName="total_bayar" msprop:Generator_ColumnPropNameInTable="total_bayarColumn" msprop:Generator_ColumnPropNameInRow="total_bayar" msprop:Generator_ColumnVarNameInTable="columntotal_bayar" type="xs:int" />
+              <xs:element name="kode_voucher" msprop:Generator_UserColumnName="kode_voucher" msprop:Generator_ColumnPropNameInTable="kode_voucherColumn" msprop:Generator_ColumnPropNameInRow="kode_voucher" msprop:Generator_ColumnVarNameInTable="columnkode_voucher">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="nomor_pc" msprop:Generator_ColumnPropNameInRow="nomor_pc" msprop:Generator_ColumnPropNameInTable="nomor_pcColumn" msprop:Generator_ColumnVarNameInTable="columnnomor_pc" msprop:Generator_UserColumnName="nomor_pc">
+              <xs:element name="nomor_pc" msprop:Generator_UserColumnName="nomor_pc" msprop:Generator_ColumnPropNameInTable="nomor_pcColumn" msprop:Generator_ColumnPropNameInRow="nomor_pc" msprop:Generator_ColumnVarNameInTable="columnnomor_pc">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="nama_tier" msprop:Generator_ColumnPropNameInRow="nama_tier" msprop:Generator_ColumnPropNameInTable="nama_tierColumn" msprop:Generator_ColumnVarNameInTable="columnnama_tier" msprop:Generator_UserColumnName="nama_tier">
+              <xs:element name="nama_tier" msprop:Generator_UserColumnName="nama_tier" msprop:Generator_ColumnPropNameInTable="nama_tierColumn" msprop:Generator_ColumnPropNameInRow="nama_tier" msprop:Generator_ColumnVarNameInTable="columnnama_tier">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="nama_operator" msprop:Generator_ColumnPropNameInRow="nama_operator" msprop:Generator_ColumnPropNameInTable="nama_operatorColumn" msprop:Generator_ColumnVarNameInTable="columnnama_operator" msprop:Generator_UserColumnName="nama_operator">
+              <xs:element name="nama_operator" msprop:Generator_UserColumnName="nama_operator" msprop:Generator_ColumnPropNameInTable="nama_operatorColumn" msprop:Generator_ColumnPropNameInRow="nama_operator" msprop:Generator_ColumnVarNameInTable="columnnama_operator">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RekapTransaksi" msprop:Generator_RowEvHandlerName="RekapTransaksiRowChangeEventHandler" msprop:Generator_RowDeletedName="RekapTransaksiRowDeleted" msprop:Generator_RowDeletingName="RekapTransaksiRowDeleting" msprop:Generator_RowEvArgName="RekapTransaksiRowChangeEvent" msprop:Generator_TablePropName="RekapTransaksi" msprop:Generator_RowChangedName="RekapTransaksiRowChanged" msprop:Generator_RowChangingName="RekapTransaksiRowChanging" msprop:Generator_TableClassName="RekapTransaksiDataTable" msprop:Generator_RowClassName="RekapTransaksiRow" msprop:Generator_TableVarName="tableRekapTransaksi" msprop:Generator_UserTableName="RekapTransaksi">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tanggal_x0020_Transaksi" msprop:Generator_ColumnPropNameInRow="Tanggal_Transaksi" msprop:Generator_ColumnPropNameInTable="Tanggal_TransaksiColumn" msprop:Generator_ColumnVarNameInTable="columnTanggal_Transaksi" msprop:Generator_UserColumnName="Tanggal Transaksi" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Tier_x0020_PC" msprop:Generator_ColumnPropNameInRow="Tier_PC" msprop:Generator_ColumnPropNameInTable="Tier_PCColumn" msprop:Generator_ColumnVarNameInTable="columnTier_PC" msprop:Generator_UserColumnName="Tier PC" type="xs:string" minOccurs="0" />
+              <xs:element name="Durasi_x0020_Jam" msprop:Generator_ColumnPropNameInRow="Durasi_Jam" msprop:Generator_ColumnPropNameInTable="Durasi_JamColumn" msprop:Generator_ColumnVarNameInTable="columnDurasi_Jam" msprop:Generator_UserColumnName="Durasi Jam" type="xs:int" minOccurs="0" />
+              <xs:element name="Total_x0020_Bayar" msprop:Generator_ColumnPropNameInRow="Total_Bayar" msprop:Generator_ColumnPropNameInTable="Total_BayarColumn" msprop:Generator_ColumnVarNameInTable="columnTotal_Bayar" msprop:Generator_UserColumnName="Total Bayar" type="xs:int" minOccurs="0" />
+              <xs:element name="Operator" msprop:Generator_ColumnPropNameInRow="Operator" msprop:Generator_ColumnPropNameInTable="OperatorColumn" msprop:Generator_ColumnVarNameInTable="columnOperator" msprop:Generator_UserColumnName="Operator" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

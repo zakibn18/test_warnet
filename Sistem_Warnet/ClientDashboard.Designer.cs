@@ -1,4 +1,4 @@
-﻿namespace Sistem_Warnet
+namespace Sistem_Warnet
 {
     partial class ClientDashboard
     {
@@ -72,11 +72,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.lblInfoPC);
             this.Controls.Add(this.lblSisaWaktu);
+            this.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.Name = "ClientDashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ClientDashboard";
             this.Load += new System.EventHandler(this.ClientDashboard_Load);
             this.ResumeLayout(false);

@@ -1,4 +1,4 @@
-﻿namespace Sistem_Warnet
+namespace Sistem_Warnet
 {
     partial class Operator_Form
     {
@@ -226,7 +226,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.ClientSize = new System.Drawing.Size(900, 562);
             this.Controls.Add(this.btnPesan);
             this.Controls.Add(this.bindingNavigator1);
@@ -236,8 +236,11 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtPencarian);
+            this.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Operator_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Operator";
             this.Load += new System.EventHandler(this.Staff_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

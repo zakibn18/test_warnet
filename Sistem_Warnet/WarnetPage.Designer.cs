@@ -1,4 +1,4 @@
-﻿namespace Sistem_Warnet
+namespace Sistem_Warnet
 {
     partial class Warnet_Form
     {
@@ -64,6 +64,7 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnImportExcel = new System.Windows.Forms.Button();
+            this.btnRekapPenghasilan = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
@@ -416,11 +417,29 @@
             this.btnImportExcel.UseVisualStyleBackColor = false;
             this.btnImportExcel.Click += new System.EventHandler(this.btnImportExcel_Click);
             // 
+            // btnRekapPenghasilan
+            // 
+            this.btnRekapPenghasilan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(85)))), ((int)(((byte)(99)))));
+            this.btnRekapPenghasilan.FlatAppearance.BorderSize = 0;
+            this.btnRekapPenghasilan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRekapPenghasilan.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
+            this.btnRekapPenghasilan.ForeColor = System.Drawing.Color.White;
+            this.btnRekapPenghasilan.Location = new System.Drawing.Point(25, 225);
+            this.btnRekapPenghasilan.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRekapPenghasilan.Name = "btnRekapPenghasilan";
+            this.btnRekapPenghasilan.Size = new System.Drawing.Size(130, 30);
+            this.btnRekapPenghasilan.TabIndex = 23;
+            this.btnRekapPenghasilan.Text = "Rekap Penghasilan";
+            this.btnRekapPenghasilan.UseVisualStyleBackColor = false;
+            this.btnRekapPenghasilan.Click += new System.EventHandler(this.btnRekapPenghasilan_Click);
+            // 
             // Warnet_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.btnRekapPenghasilan);
             this.Controls.Add(this.btnImportExcel);
             this.Controls.Add(this.btnDashboard);
             this.Controls.Add(this.btnReset);
@@ -443,8 +462,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Warnet_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
             this.Load += new System.EventHandler(this.Warnet_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -492,6 +514,7 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button btnImportExcel;
+        private System.Windows.Forms.Button btnRekapPenghasilan;
     }
 }
 
