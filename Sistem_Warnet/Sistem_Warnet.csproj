@@ -118,6 +118,12 @@
     <Compile Include="Operator_Form.Designer.cs">
       <DependentUpon>Operator_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportRekap.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportRekap.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ReportStruk.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -157,6 +163,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Operator_Form.resx">
       <DependentUpon>Operator_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportRekap.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportRekap.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportStruk.rdlc" />
     <EmbeddedResource Include="ReportStruk.rpt">
