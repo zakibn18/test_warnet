@@ -5,13 +5,14 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration; // WAJIB DITAMBAHKAN DI ATAS
 
 namespace Sistem_Warnet
 {
     internal class DAL
     {
-        // Ganti 192.168.1.10 dengan IP hasil cek "ipconfig" di PC Kasir tadi
-        private string connectionString = "Data Source=192.168.137.1,1433;Initial Catalog=DBWarnet;User ID=sa;Password=123;TrustServerCertificate=True"; 
+        // Sekarang DAL akan membaca IP dari App.config secara otomatis
+        private string connectionString = ConfigurationManager.ConnectionStrings["KoneksiWarnet"].ConnectionString;
         private SqlConnection conn;
 
         // TAMBAHAN WAJIB: Konstruktor untuk menginisialisasi conn
