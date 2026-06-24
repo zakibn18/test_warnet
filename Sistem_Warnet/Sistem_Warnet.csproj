@@ -94,6 +94,9 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DBWarnetDataSet.cs">
+      <DependentUpon>DBWarnetDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DBWarnetDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

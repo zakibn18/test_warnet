@@ -10,7 +10,8 @@ namespace Sistem_Warnet
 {
     internal class DAL
     {
-        private string connectionString = "Data Source=DESKTOP-8TS9IRD\\ZAKIBN;Initial Catalog=DBWarnet;Integrated Security=True";
+        // Ganti 192.168.1.10 dengan IP hasil cek "ipconfig" di PC Kasir tadi
+        private string connectionString = "Data Source=192.168.137.1,1433;Initial Catalog=DBWarnet;User ID=sa;Password=123;TrustServerCertificate=True"; 
         private SqlConnection conn;
 
         // TAMBAHAN WAJIB: Konstruktor untuk menginisialisasi conn
